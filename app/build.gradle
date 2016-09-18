@@ -56,10 +56,7 @@ dependencies {
     apt "org.androidannotations:rest-spring:$AAVersion"
     compile "org.androidannotations:rest-spring-api:$AAVersion"
 
-    compile 'org.springframework.android:spring-android-rest-template:2.0.0.M2'
-    compile 'org.codehaus.jackson:jackson-mapper-asl:1.8.0'
-    compile 'com.squareup.okhttp:okhttp-urlconnection:2.1.0'
+    compile 'org.springframework.android:spring-android-rest-template:2.0.0.M3'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.7.0'
     compile 'com.squareup.okhttp:okhttp:2.1.0'
-
-
 }

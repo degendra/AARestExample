@@ -4,12 +4,12 @@ import org.androidannotations.rest.spring.annotations.Get;
 import org.androidannotations.rest.spring.annotations.Rest;
 import org.androidannotations.rest.spring.api.RestClientErrorHandling;
 import org.springframework.http.client.OkHttpClientHttpRequestFactory;
-import org.springframework.http.converter.json.MappingJacksonHttpMessageConverter;
+import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 
 /**
  * Created by degendra on 9/18/16.
  */
-@Rest(rootUrl = "http://api.stackexchange.com/2.2/", converters = {MappingJacksonHttpMessageConverter.class},
+@Rest(rootUrl = "http://api.stackexchange.com/2.2/", converters = {MappingJackson2HttpMessageConverter.class},
         requestFactory = OkHttpClientHttpRequestFactory.class)
 public interface Client extends RestClientErrorHandling {
 
