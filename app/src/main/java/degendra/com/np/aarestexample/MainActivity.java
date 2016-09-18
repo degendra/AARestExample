@@ -35,16 +35,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("AA Rest Example");
-        }
     }
 
     @AfterViews
     void afterViews() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle("AA Rest Example");
+        }
+
         title.setText("StackOverflow android-annotations tagged questions.");
         questionsService();
     }
